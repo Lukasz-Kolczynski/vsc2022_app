@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             SuspendLayout();
             // 
             // Form1
@@ -35,8 +36,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(705, 460);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Form1";
             Text = "TrenApp";
+            Load += Form1_Load;
             ResumeLayout(false);
         }
 
